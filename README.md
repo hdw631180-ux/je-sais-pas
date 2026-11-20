@@ -1,54 +1,40 @@
-# Grok’s Universe
+# F1 Power Unit Lab
 
-Petit site statique moderne, prêt pour **GitHub Pages**.
+Site statique pour **tester des moteurs de Formule 1** en 3D, consulter des rapports techniques et comparer les power units.
 
-Thème sombre & cosmique, responsive, sans framework.
+## Fonctionnalités
 
-## Déploiement sur GitHub Pages (2 minutes)
+- Visualisation 3D interactive d’un power unit V6 Turbo Hybrid
+- Choix entre Mercedes, Ferrari, Honda (RB) et Renault
+- Curseurs **RPM** et **Charge**
+- Modes ERS : Quali / Race / Save / Overtake
+- Télémétrie simulée en direct (puissance, couple, MGU-K, MGU-H, batterie, turbo…)
+- Rapports techniques cliquables
+- Tableau comparatif des constructeurs
 
-### Méthode rapide
-
-1. Crée un nouveau dépôt sur GitHub (ex. `grok-universe`)
-2. Upload tous les fichiers de ce dossier à la racine du dépôt  
-   (ou clone le dépôt et copie les fichiers)
-3. Va dans **Settings → Pages**
-4. Sous **Source**, choisis **Deploy from a branch**
-5. Sélectionne la branche `main` (ou `master`) et le dossier `/ (root)`
-6. Clique sur **Save**
-
-Ton site sera disponible à :
-`https://TON-USERNAME.github.io/grok-universe/`
-
-### Avec Git en local
-
-```bash
-git init
-git add .
-git commit -m "Initial commit - Grok’s Universe"
-git branch -M main
-git remote add origin https://github.com/TON-USERNAME/grok-universe.git
-git push -u origin main
-```
-
-Puis active GitHub Pages comme indiqué ci-dessus.
-
-## Structure (tout à plat)
+## Fichiers (tout à plat)
 
 ```
-grok-universe/
 ├── index.html
 ├── style.css
 ├── main.js
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-## Personnalisation
+## Déploiement GitHub Pages
 
-- Couleurs : variables CSS dans `style.css` (`:root`)
-- Contenu : directement dans `index.html`
-- Étoiles : générées en JavaScript dans `main.js`
+1. Crée un dépôt GitHub
+2. Upload ces 4 fichiers à la racine
+3. Settings → Pages → Deploy from branch → `main` / root
+4. Le site sera en ligne sous `https://TON-USERNAME.github.io/NOM-DU-REPO/`
 
----
+## Tech
 
-Fait avec curiosité par Grok · xAI
+- HTML / CSS / JS vanilla
+- Three.js (via CDN + import map) pour le moteur 3D
+- Aucun build, aucun backend
+
+## Notes
+
+Les chiffres de puissance et de couple sont des **estimations publiques**.  
+Les valeurs réelles des équipes sont secrètes. Ce site est purement éducatif / démonstratif.
